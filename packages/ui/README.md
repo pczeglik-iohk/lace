@@ -51,3 +51,5 @@ export default {
 | \*.data.ts       | Defines the data/types representation of the UI component or application logic |
 | \*.context.ts    |    Defines the UI component's inner state to be consumed by nested children    |
 | \*.hooks.ts      |                Defines methods to manipulate the context state                 |
+
+## Publishing
