@@ -45,6 +45,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: 💽 Install dependencies
+        working-directory: ./packages/ui
         run: yarn --frozen-lockfile
 
       - name: 🧑‍🔬 Linter

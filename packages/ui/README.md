@@ -17,3 +17,5 @@ yarn storybook
 ```
 
 ## Publishing
+
+`@pczeglik-iohk/ui`
