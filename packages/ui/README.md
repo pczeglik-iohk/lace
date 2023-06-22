@@ -15,3 +15,5 @@ Storybook is used for development
 ```bash
 yarn storybook
 ```
+
+## Publishing
