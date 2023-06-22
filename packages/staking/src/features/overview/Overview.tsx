@@ -1,4 +1,4 @@
-import { Box, ControlButton, Flex, PIE_CHART_DEFAULT_COLOR_SET, PieChartColor, Text } from '@lace/ui';
+import { Box, ControlButton, Flex, PIE_CHART_DEFAULT_COLOR_SET, PieChartColor, Text } from '@pczeglik-iohk/ui';
 import { useTranslation } from 'react-i18next';
 import { DelegationCard } from './DelegationCard';
 import { StakingInfoCard } from './staking-info-card';
