@@ -53,3 +53,5 @@ export default {
 | \*.hooks.ts      |                Defines methods to manipulate the context state                 |
 
 ## Publishing
+
+`@pczeglik-iohk/ui`
