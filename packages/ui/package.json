@@ -1,7 +1,40 @@
 {
-  "author": "IOHK",
+  "name": "@pczeglik-iohk/ui",
+  "version": "0.1.0",
+  "description": "Lace UI Toolkit",
+  "homepage": "https://github.com/input-output-hk/lace/blob/master/packages/ui/README.md",
   "bugs": {
     "url": "https://github.com/input-output-hk/lace/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/input-output-hk/lace.git"
+  },
+  "license": "Apache-2.0",
+  "author": "IOHK",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "build-storybook": "export NODE_OPTIONS=--openssl-legacy-provider; build-storybook",
+    "cleanup": "shx rm -rf node_modules",
+    "format": "yarn prettier --write '**/*.tsx'",
+    "lint": "eslint .",
+    "semantic-release": "semantic-release",
+    "storybook": "export NODE_OPTIONS=--openssl-legacy-provider; start-storybook -p 6006",
+    "test": "echo \"Error: no test specified\"",
+    "test-storybook": "test-storybook",
+    "test-storybook:ci": "export NODE_OPTIONS=--openssl-legacy-provider; export STORYBOOK_TEST=1; concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook && http-server storybook-static --port 6006\" \"wait-on http://127.0.0.1:6006/ && yarn test-storybook\"",
+    "test:coverage": "yarn test --coverage",
+    "typecheck": "tsc --noEmit",
+    "watch": "yarn build --watch"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.0.2",
@@ -18,7 +51,6 @@
     "react-responsive": "^9.0.2",
     "recharts": "^2.6.2"
   },
-  "description": "Lace UI Toolkit",
   "devDependencies": {
     "@babel/core": "^7.21.0",
     "@rollup/plugin-commonjs": "20.0.0",
@@ -67,39 +99,7 @@
     "webpack": "^5.76.1",
     "webpack-dev-server": "^4.11.1"
   },
-  "files": [
-    "dist/**/*",
-    "package.json",
-    "README.md",
-    "LICENSE"
-  ],
-  "homepage": "https://github.com/input-output-hk/lace/blob/master/packages/ui/README.md",
-  "license": "Apache-2.0",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "name": "@lace/ui",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/input-output-hk/lace.git"
-  },
-  "scripts": {
-    "build": "rollup -c rollup.config.js",
-    "build-storybook": "export NODE_OPTIONS=--openssl-legacy-provider; build-storybook",
-    "cleanup": "shx rm -rf node_modules",
-    "format": "yarn prettier --write '**/*.tsx'",
-    "lint": "eslint .",
-    "semantic-release": "semantic-release",
-    "storybook": "export NODE_OPTIONS=--openssl-legacy-provider; start-storybook -p 6006",
-    "test": "echo \"Error: no test specified\"",
-    "test-storybook": "test-storybook",
-    "test-storybook:ci": "export NODE_OPTIONS=--openssl-legacy-provider; export STORYBOOK_TEST=1; concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook && http-server storybook-static --port 6006\" \"wait-on http://127.0.0.1:6006/ && yarn test-storybook\"",
-    "test:coverage": "yarn test --coverage",
-    "typecheck": "tsc --noEmit",
-    "watch": "yarn build --watch"
-  },
-  "typings": "dist/index.d.ts",
-  "version": "0.1.0"
+  }
 }
