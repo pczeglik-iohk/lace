@@ -11,15 +11,15 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs",
+      "default": "./dist/index.js",
       "import": "./dist/index.js",
-      "default": "./dist/index.js"
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
     },
     "./index.css": {
-      "require": "./dist/index.css",
+      "default": "./dist/index.css",
       "import": "./dist/index.css",
-      "default": "./dist/index.css"
+      "require": "./dist/index.css"
     }
   },
   "main": "./dist/index.cjs",
@@ -62,8 +62,8 @@
     "@cardano-sdk/util": "~0.11.0",
     "@lace/cardano": "^0.1.0",
     "@lace/common": "^0.1.0",
-    "@lace/ui": "^0.1.0",
     "@ladle/react": "^2.12.3",
+    "@pczeglik-iohk/ui": "^0.1.0",
     "@tsconfig/create-react-app": "^1.0.3",
     "@vanilla-extract/css": "^1.11.1",
     "@vanilla-extract/esbuild-plugin": "^2.2.2",
@@ -90,7 +90,7 @@
     "@cardano-sdk/util": "~0.11.0",
     "@lace/cardano": "^0.1.0",
     "@lace/common": "^0.1.0",
-    "@lace/ui": "^0.1.0",
+    "@pczeglik-iohk/ui": "^0.1.0",
     "antd": "^4.17.3",
     "bignumber.js": "^9.0.1",
     "react": "17.0.2",
