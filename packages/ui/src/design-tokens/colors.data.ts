@@ -135,7 +135,7 @@ export const lightColorScheme = {
   $primary_accent_purple_0_3: 'rgba(127, 90, 240, 0.3)',
   $primary_dark_grey: 'grey',
   $primary_dark_grey_plus: '#5F6676',
-  $primary_black: '#3D3B39',
+  $primary_black: 'black',
   $primary_grey: '#C0C0C0',
   $primary_light_grey_plus: '#EFEFEF',
   $primary_light_grey_plus_0_56: 'rgba(239, 239, 239, 0.56)',
