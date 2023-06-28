@@ -1,7 +1,4 @@
 {
-  "branches": [
-    "main", "beta"
-  ],
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
@@ -10,9 +7,9 @@
     [
       "@semantic-release/github",
       {
-        "successComment": false,
         "failComment": false,
-        "labels": false
+        "labels": false,
+        "successComment": false
       }
     ],
     [
