@@ -1,4 +1,4 @@
-import { Card, Cell, Grid, PieChart, PieChartColor, Text } from '@lace/ui';
+import { Card, Cell, Grid, PieChart, PieChartColor, Text } from '@pczeglik-iohk/ui';
 import { Fragment } from 'react';
 import { useTranslation } from 'react-i18next';
 import { TranslationKey } from '../i18n/types';

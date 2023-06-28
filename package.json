@@ -54,8 +54,8 @@
       "prettier --write"
     ],
     "*(packages/ui/**/*.{js,ts,tsx})": [
-      "yarn workspace @lace/ui lint --fix",
-      "yarn workspace @lace/ui format"
+      "yarn workspace @pczeglik-iohk/ui lint --fix",
+      "yarn workspace @pczeglik-iohk/ui format"
     ],
     "*.json": "prettier --write",
     "{packages/!(ui),apps}/**/*.md": [

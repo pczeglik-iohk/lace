@@ -1,4 +1,4 @@
-import { SubNavigation } from '@lace/ui';
+import { SubNavigation } from '@pczeglik-iohk/ui';
 import { ReactNode, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 

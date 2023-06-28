@@ -1,4 +1,4 @@
-import { Box, Text } from '@lace/ui';
+import { Box, Text } from '@pczeglik-iohk/ui';
 import { useTranslation } from 'react-i18next';
 import { BrowsePools } from '../browse-pools';
 import { Overview } from '../overview';
