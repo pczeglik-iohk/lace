@@ -148,7 +148,7 @@ export const lightColorScheme = {
   $secondary_data_orange: 'orange',
   $secondary_lace_yellow: 'yellow',
   $secondary_cream: '#FCF5E3',
-  $secondary_data_green: '#2CB67D',
+  $secondary_data_green: 'green',
   $secondary_data_blue: '#3489F7',
 };
 

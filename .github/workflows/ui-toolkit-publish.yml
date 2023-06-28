@@ -1,14 +1,11 @@
 name: Lace UI Toolkit
 
 on:
-  pull_request:
-    paths:
-      - packages/ui/**
   push:
     paths:
       - packages/ui/**
     branches:
-      - beta
+      - main
 
 jobs:
   ui-toolkit-publish:
