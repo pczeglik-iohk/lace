@@ -149,7 +149,7 @@ export const lightColorScheme = {
   $secondary_lace_yellow: 'yellow',
   $secondary_cream: '#FCF5E3',
   $secondary_data_green: 'green',
-  $secondary_data_blue: '#3489F7',
+  $secondary_data_blue: 'blue',
 };
 
 export const darkColorScheme = {
