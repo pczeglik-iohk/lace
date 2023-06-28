@@ -145,7 +145,7 @@ export const lightColorScheme = {
   $secondary_lace_pink: 'pink',
   $secondary_data_pink: '#FF5470',
   $secondary_hover_data_pink: '#E84D66',
-  $secondary_data_orange: '#FF8E3C',
+  $secondary_data_orange: 'orange',
   $secondary_lace_yellow: '#FDC300',
   $secondary_cream: '#FCF5E3',
   $secondary_data_green: '#2CB67D',
