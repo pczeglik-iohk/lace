@@ -1,6 +1,6 @@
 import { Percent } from '@cardano-sdk/util';
 import { Wallet } from '@lace/cardano';
-import { Box, Flex } from '@lace/ui';
+import { Box, Flex } from '@pczeglik-iohk/ui';
 import stakePoolsRaw from './data.json';
 import { Search } from './search';
 import { StakePoolsTable } from './stake-pools-table';
