@@ -130,7 +130,7 @@ export const laceGradient =
 export const colorTransparent = 'rgba(0, 0, 0, 0)';
 
 export const lightColorScheme = {
-  $primary_accent_purple: '#7F5AF0',
+  $primary_accent_purple: 'purple',
   $primary_hover_purple: '#7452DB',
   $primary_accent_purple_0_3: 'rgba(127, 90, 240, 0.3)',
   $primary_dark_grey: '#6F7786',
