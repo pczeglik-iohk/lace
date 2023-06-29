@@ -1,4 +1,13 @@
-import { elevation, fontFamily, fontSizes, fontWeights, lineHeights, opacities, radius, spacing } from '@lace/ui';
+import {
+  elevation,
+  fontFamily,
+  fontSizes,
+  fontWeights,
+  lineHeights,
+  opacities,
+  radius,
+  spacing,
+} from '@pczeglik-iohk/ui';
 import { createTheme, createThemeContract } from '@vanilla-extract/css';
 import { colorsContract, darkThemeColors, lightThemeColors } from './colors';
 

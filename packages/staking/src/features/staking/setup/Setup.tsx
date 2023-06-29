@@ -1,4 +1,4 @@
-import { LocalThemeProvider, ThemeColorScheme } from '@lace/ui';
+import { LocalThemeProvider, ThemeColorScheme } from '@pczeglik-iohk/ui';
 import { PropsWithChildren } from 'react';
 import { I18nextProvider } from 'react-i18next';
 import { initI18n } from '../../i18n';
