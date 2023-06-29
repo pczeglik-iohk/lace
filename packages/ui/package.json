@@ -92,6 +92,7 @@
     "prettier": "^2.4.1",
     "rollup-plugin-copy": "^3.4.0",
     "semantic-release": "^21.0.1",
+    "semantic-release-monorepo": "^7.0.5",
     "storybook-addon-pseudo-states": "^1.15.2",
     "url-loader": "^4.1.1",
     "utility-types": "^3.10.0",
