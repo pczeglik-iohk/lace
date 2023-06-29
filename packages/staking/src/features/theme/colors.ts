@@ -1,4 +1,4 @@
-import { darkColorScheme, lightColorScheme } from '@lace/ui';
+import { darkColorScheme, lightColorScheme } from '@pczeglik-iohk/ui';
 
 export const colorsContract = {
   $delegationCardInfoLabelColor: '',

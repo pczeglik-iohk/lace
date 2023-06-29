@@ -1,9 +1,6 @@
 name: Lace UI Toolkit
 
 on:
-  pull_request:
-    paths:
-      - packages/ui/**
   push:
     paths:
       - packages/ui/**
@@ -11,13 +8,19 @@ on:
       - main
 
 jobs:
-  chromatic-deployment:
+  ui-toolkit-publish:
+    permissions:
+      contents: write
+      packages: write
+
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       - name: 🧰 Use Node.js
         uses: actions/setup-node@v3
@@ -39,30 +42,20 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: 💽 Install dependencies
+        working-directory: ./packages/ui
         run: yarn --frozen-lockfile
 
       - name: 🧑‍🔬 Linter
         working-directory: ./packages/ui
         run: yarn lint
 
-      - name: 👩‍🔬 Tests
+      - name: Build
         working-directory: ./packages/ui
-        run: yarn test-storybook:ci
+        run: yarn build
 
-      - name: 🌍 Publish to Chromatic
-        if: github.ref != 'refs/heads/main'
-        uses: chromaui/action@v1
-        with:
-          projectToken: ${{ secrets.CHROMATIC_LACE_UI_TOOLKIT_TOKEN }}
-          workingDir: ./packages/ui
-          buildScriptName: build-storybook
-          onlyChanged: true
-
-      - name: 🌍 Publish to Chromatic and auto accept changes
-        if: github.ref == 'refs/heads/main'
-        uses: chromaui/action@v1
-        with:
-          projectToken: ${{ secrets.CHROMATIC_LACE_UI_TOOLKIT_TOKEN }}
-          autoAcceptChanges: true
-          workingDir: ./packages/ui
-          onlyChanged: true
+      - name: Publish npm package
+        working-directory: ./packages/ui
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release
