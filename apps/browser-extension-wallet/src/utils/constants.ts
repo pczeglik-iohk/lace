@@ -97,7 +97,8 @@ export enum MenuItemList {
   NFT = 'nft',
   TRANSACTIONS = 'transactions',
   STAKING = 'staking',
-  DAPPS = 'dapps'
+  DAPPS = 'dapps',
+  TRADING = 'trading'
 }
 
 export const POPUP_WINDOW = {

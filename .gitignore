@@ -16,6 +16,7 @@ coverage
 .rollup.cache
 .tool-versions
 .vscode
+.yalc
 
 # PRJ Spec
 /.cache

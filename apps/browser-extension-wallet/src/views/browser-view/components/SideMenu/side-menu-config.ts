@@ -56,5 +56,14 @@ export const sideMenuConfig: SideMenuItemConfig[] = [
     regularIcon: StakingIconDefault,
     hoverIcon: StakingIconHover,
     activeIcon: StakingIconActive
+  },
+  {
+    id: MenuItemList.TRADING,
+    label: 'browserView.sideMenu.links.metadex',
+    testId: 'item-trading',
+    path: routes.trading,
+    regularIcon: StakingIconDefault,
+    hoverIcon: StakingIconHover,
+    activeIcon: StakingIconActive
   }
 ];

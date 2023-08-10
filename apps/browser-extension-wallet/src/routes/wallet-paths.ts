@@ -20,7 +20,8 @@ export const walletRoutePaths = {
     create: '/setup/create',
     hardware: '/setup/hardware',
     restore: '/setup/restore'
-  }
+  },
+  trading: '/trading/swap'
 };
 
 export const dAppRoutePaths = {

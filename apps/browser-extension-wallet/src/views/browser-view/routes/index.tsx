@@ -26,6 +26,7 @@ import { Portal } from '../features/wallet-setup/components/Portal';
 import { MainLoader } from '@components/MainLoader';
 import { useWalletInfoSubscriber } from '@hooks';
 import { DappBetaModal } from '../features/dapp';
+import { MetadexLayout } from '../features/metadex/components/MetadexLayout';
 
 export const defaultRoutes: RouteMap = [
   {
@@ -55,6 +56,10 @@ export const defaultRoutes: RouteMap = [
   {
     path: routes.nfts,
     component: NftsLayout
+  },
+  {
+    path: routes.trading,
+    component: MetadexLayout
   }
 ];
 

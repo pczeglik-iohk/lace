@@ -12,6 +12,10 @@ import { AddressBook } from '../features/address-book';
 import { Settings } from '../features/settings';
 import { NftDetail, Nfts } from '@src/features/nfts';
 
+const Metadex = function () {
+  return <div>Metadex 2</div>;
+};
+
 export const ExtensionRoutes = (): React.ReactElement => (
   <MainLayout>
     <Switch>
@@ -24,6 +28,7 @@ export const ExtensionRoutes = (): React.ReactElement => (
       <Route exact path={walletRoutePaths.addressBook} component={AddressBook} />
       <Route exact path={walletRoutePaths.settings} component={Settings} />
       <Route exact path={walletRoutePaths.nfts} component={Nfts} />
+      <Route exact path={walletRoutePaths.trading} component={Metadex} />
       <Route path="*" render={() => <Redirect to={walletRoutePaths.assets} />} />
     </Switch>
     <StakingWarningModals popupView />

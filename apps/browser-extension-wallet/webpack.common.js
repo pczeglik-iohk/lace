@@ -44,6 +44,9 @@ module.exports = () => ({
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.mjs'],
+    alias: {
+      process: 'process/browser'
+    },
     fallback: {
       https: require.resolve('https-browserify'),
       http: require.resolve('stream-http'),
@@ -60,7 +63,9 @@ module.exports = () => ({
       zlib: require.resolve('browserify-zlib'),
       dns: false,
       tls: false,
-      child_process: false
+      child_process: false,
+      util: require.resolve('util/'),
+      'process/browser': require.resolve('process/browser')
     },
     plugins: [new TsconfigPathsPlugin({ configFile: 'src/tsconfig.json' })]
   },
